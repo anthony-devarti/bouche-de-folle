@@ -11,9 +11,10 @@ CSS
 Bootstrap
 JS
 React
-Process
 
-## Setup
+## Process
+
+### Setup
 Plan out and pseudocode your project - see example kanban
 Create GitHub repo Locally via NPX create-react-app
 Create necessary files for the application in your terminal and view and modify them in your editor
@@ -21,14 +22,16 @@ NPM install and import/route necessary css/js libraries (E.g. Bootstrap, Axios, 
 Save all and create your first commit to main, then switch to a dev branch
 Application File Structure
 See create-react-app.dev
-Develop
+
+### Develop
 Create a dev branch to commit your code to. Let’s get in the habit of breaking things out into tickets, cutting a branch for that feature, creating a PR into dev, then merging and repeating.
 Add content and elements to your website.
 View changes and test in gitpod..
 Save often, and commit to your feature branch on GitHub when important changes happen. Merge PR in, cut new feature branch.
 Push your commits to GitHub remote.
 For bug fixes, refactored code, and feature branches, you must create a branch off of dev, onto a new-feature branch and create a Pull Request back to dev when complete.
-Deploy (Friday)
+
+### Deploy (Friday)
 Create a Pull Request from dev into main
 Confirm code is up to date and works correctly
 Leave your code running on a node server or push it to Firebase.
@@ -68,7 +71,7 @@ Parse the results of the API call to show a list of sides available for substitu
 Implement DoorDash style online ordering with parent-child component state management and a 'shopping cart' to save data for purchase.
 Write React Tests with create-react-app.
 
-## Recommended NPM Packages (for when you refactor, not the first time around)
+### Recommended NPM Packages (for when you refactor, not the first time around)
 React-Bootstrap
 Redux
 React Virtualized
