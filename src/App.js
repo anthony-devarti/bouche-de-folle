@@ -1,21 +1,29 @@
 //import logo from './logo.svg';
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import  {Outlet} from 'react-router-dom';
+import {Navbar, Nav, Container} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+
 
 
 //the menu shouldn't link to another page, but should instead scroll the view down to see the menu interations.  Come back and check on this later
 //this will also need to be styled
+//why is it showing me that nav is undefined?  When I hover over it, it gives me the details as if 
 export default function App() {
   return (
     <div>
-      <h1>React restaurant</h1>
-      <nav style={{borderBottom: 'solid 1px', paddingBottom: '1rem',}}>
-        <Link to="www.google.com">Home</Link> | {" "}
-        <Link to="www.google.com">Menu</Link> | {" "}
-        <Link to="www.google.com">Contact</Link> | {" "}
-        <Link to="www.google.com">About</Link> | {" "}
-      </nav>
+      <Navbar bg="light" variant="light">
+        <Container>
+          <Navbar.Brand href="#home">React Restaurant</Navbar.Brand>
+            <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#menu">Menu</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
       <Outlet />
     </div>
   );
