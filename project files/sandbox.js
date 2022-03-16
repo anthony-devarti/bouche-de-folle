@@ -10,26 +10,31 @@ export default async function getData(){
 //Routes should exist as a folder that holds all of the different categories of menu items, by cuisine  french, vietnamese, italian, and korean
 
 //french
-import React, { useEffect, useState, UseState } from 'react';
-import getData from '../utils/data';
-import { getLocalStorage, setLocalStorage } from '../utils/localStorage'
+    // import React, { useEffect, useState, UseState } from 'react';
+    // import getData from '../utils/data';
+    // import { getLocalStorage, setLocalStorage } from '../utils/localStorage'
 
-export default function French(){
-    const [french, setFrench] = useState([]);
+    // export default function French(){
+    //     const [french, setFrench] = useState([]);
 
-   useEffect(() => { 
-    let data = getLocalStorage();
-    if (data.length > 0) {
-        setFrench(data);
-    } else {
-        getData()
-        .then((data)=> {
-            setFrench(data);
-            setLocalStorage(_,data)
-        })
-    }
-}, []);
+    // useEffect(() => { 
+    //     let data = getLocalStorage();
+    //     if (data.length > 0) {
+    //         setFrench(data);
+    //     } else {
+    //         getData()
+    //         .then((data)=> {
+    //             setFrench(data);
+    //             setLocalStorage(_,data)
+    //         })
+    //     }
+    // }, []);
 
-return(
-    //some jsx that constructs the french page goes here
-)
+    // return(
+    //some jsx that constructs the  page goes here
+    // )
+
+//this should be mostly cookie-cutter for the other 4 pages
+
+//Navbar component should be present at all times.
+

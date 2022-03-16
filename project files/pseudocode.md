@@ -14,7 +14,7 @@
 ## Problems
     -API call working as expected.  This should probably be handled first, to make sure that the necessary data is coming through as expected.
     -Nav bar logo extending beyond the bottom of the nav-bar may be trouble.
-    
+
 
 ## Components
 Navbar (https://getbootstrap.com/docs/4.0/components/navbar/)
@@ -22,17 +22,22 @@ Navbar (https://getbootstrap.com/docs/4.0/components/navbar/)
     home
     visit us
         hours of operation
+            this is just text
         address and map
+            text and an image
     contact us
 
 Hero element
     CTA - sends user to menu
+        scrolls user down to the menu below the fold
     background image
+        table image
 
 Menu
     Categories ()
         Menu item card (https://getbootstrap.com/docs/4.0/components/collapse/#accordion-example)
             description
+                
             price
             image
             substitutions checkboxes
