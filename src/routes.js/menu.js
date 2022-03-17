@@ -1,11 +1,12 @@
 //imports
 
 import React, { useEffect, useState } from 'react';
+import { Container, Row, Accordion, Col } from 'react-bootstrap';
 import getData from '../utils/data.js';
 import { getLocalStorage, setLocalStorage } from '../utils/localstorage';
 
 export default function Menu() {
-  const ENDPOINT = 'Menu';
+  const ENDPOINT = 'item';
   const [menu, setMenu] = useState([]);
   
   useEffect(() => {
@@ -25,17 +26,33 @@ export default function Menu() {
     <main style={{ padding: "1rem 0" }} className="container">
       <div className="row justify-content-center text-center gap-2">
         <h2>Menu</h2>
-        {menu.map((menu) => <Menus key={menu.id} Menus={menu} />)}
+        <Item />
+        {/* {menu.map((menu) => <Menus key={menu.id} Menus={menu} />)} */}
       </div>
     </main>
   );
 }
 
-
-const Menus = ({ Menu }) => {
+//some sort of tabbed menu that calls the API more specifically whenever a specific tab is opened
+const Item = ({ Menus }) => {
   return (
-    <div className='card col-5 p-3'>
-      <h2>{Menus.name}</h2>
-    </div>
+        <Container>
+            <Row>
+              <Accordion>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>Apple</Accordion.Header>
+                <Accordion.Body>
+                <Row className="justify-content-md-left">
+                  <Col>This is where the image would live</Col>
+                  <Col md="auto">It's an Apple.  You know what's going on, here.</Col>
+                  <Col xs lg="2">
+                    Price goes here.
+                  </Col>
+                </Row>
+                </Accordion.Body>
+              </Accordion.Item>
+              </Accordion>
+              </Row>
+        </Container>
   )
 }
