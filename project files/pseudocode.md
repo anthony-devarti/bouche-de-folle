@@ -54,4 +54,12 @@ Menu card logic
 
 
 
+Menu is too big to be visible on one page.
+Should be split by cuisine
+    French (ID:14)
+    Vietnamese (ID:11)
+    Italian (ID:6)
+    Korean (ID:4)
+    Cajun (ID:7)
+
 

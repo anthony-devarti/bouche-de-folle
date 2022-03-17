@@ -4,6 +4,7 @@ import {Navbar, Nav, Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Logo from '/workspace/bouche-de-folle/src/img/logo.png'
+import Menu from './routes.js/menu'
 
 
 
@@ -33,6 +34,10 @@ export default function App() {
           </Nav>
         </Container>
       </Navbar>
+      <Container>
+        <p>Text for the next section</p>
+      </Container>
+      <Menu />
       <Outlet />
     </div>
   );
