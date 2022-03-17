@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +32,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bg-light {
+  background-color: #9da1a2 !important;
+}
+
+.Brand {
+  position: absolute;
+}
+
+.Navbar {
+  height: 30em;
 }
