@@ -40,3 +40,12 @@
 .bg-light {
   background-color: #9da1a2 !important;
 }
+
+svg {
+  position: absolute
+}
+
+.Link {
+  text-align: right;
+  align-items: right;
+}
