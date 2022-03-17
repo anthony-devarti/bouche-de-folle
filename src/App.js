@@ -1,9 +1,9 @@
-//import logo from './logo.svg';
 import React from 'react';
 import  {Outlet} from 'react-router-dom';
 import {Navbar, Nav, Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+import Logo from '/workspace/bouche-de-folle/src/img/logo.png'
 
 
 
@@ -16,7 +16,15 @@ export default function App() {
     <div>
       <Navbar bg="light" variant="light">
         <Container>
-          <Navbar.Brand href="#home"><img src="/workspace/bouche-de-folle/public/img/logo.png" alt="logo"></img></Navbar.Brand>
+          <Navbar.Brand href="#home">
+        <img
+          alt=""
+          src={Logo}
+          width="150"
+          height="150"
+          className="d-inline-block align-top"
+        />{' '}
+      </Navbar.Brand>
             <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#menu">Menu</Nav.Link>

@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -41,11 +38,10 @@
   background-color: #9da1a2 !important;
 }
 
-svg {
-  position: absolute
+.Brand {
+  position: absolute;
 }
 
-.Link {
-  text-align: right;
-  align-items: right;
+.Navbar {
+  height: 30em;
 }
